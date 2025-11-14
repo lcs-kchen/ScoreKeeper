@@ -34,7 +34,7 @@ struct ContentView: View {
                     GridRow {
                         TextField("Name", text: $player.name)
                         Text("\(player.score)")
-                        Stepper("\(player.score)", value: $player.score)
+                        Stepper("\(player.score)", value: $player.score, in: 0...20)
                             .labelsHidden()
                     }
                 }
